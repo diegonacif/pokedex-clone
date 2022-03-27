@@ -6,7 +6,7 @@
 main {
   display: flex;
   background: #8cc1fa;
-  height: 100vh;
+  min-height: 100vh;
   max-width: 53rem;
   margin: 0 auto;
 }
@@ -15,29 +15,94 @@ h2 {
   margin-top: 0.5rem;
 }
 
+h6 {
+  color: #929292;
+}
+
 span {
+  text-align: center;
   font-size: 0.7rem;
   background: #21a110;
-  width: 3rem;
+  width: 4.5rem;
   padding: 2px 5px;
+  border-radius: 3px;
+  color: #ffffff;
 }
 
 .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 2rem 1rem;
   background: #8cfafa;
-  height: 100%;
+  /* height: 100%; */
   width: 37rem;
   max-width: 90%;
   margin: 0 auto;
-  /* padding: 0 1rem; */
+  padding: 1rem;
 }
 
-.imgWrapper {
+.imgWp {
   background: #dee0e0;
   border-radius: 0.5rem;
   margin-bottom: 0.2rem;
+  width: 11rem;
+  height: 11rem;
 }
 
-.descriptionWrapper {
+.descriptionWp {
   padding: 0 1rem;
+  width: 10rem;
+}
+
+.typeWp {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.5rem;
+  margin-top: 0.2rem;
+}
+
+.movesWp {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  row-gap: 0.5rem;
+  margin-top: 1.5rem;
+  padding: 0 1rem;
+}
+
+.movesWp span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 8rem;
+  height: 2rem;
+  font-size: 1rem;
+  background: #dee0e0;
+  color: #000;
+}
+
+.card img {
+  width: 100%;
+}
+
+#grass {
+  background: #9bcc50;
+  color: #000000;
+}
+
+#poison {
+  background: #B97FC9;
+}
+
+#fire {
+  background: #FD7D24;
+}
+
+#flying {
+  background: #BDB9B8;
+  color: #000000;
+}
+
+#water {
+  background: #4592C4;
 }
