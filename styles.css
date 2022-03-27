@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  background: #8cc1fa;
+  height: 100vh;
+  max-width: 53rem;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-top: 0.5rem;
+}
+
+span {
+  font-size: 0.7rem;
+  background: #21a110;
+  width: 3rem;
+  padding: 2px 5px;
+}
+
+.container {
+  display: flex;
+  background: #8cfafa;
+  height: 100%;
+  width: 37rem;
+  max-width: 90%;
+  margin: 0 auto;
+  /* padding: 0 1rem; */
+}
+
+.imgWrapper {
+  background: #dee0e0;
+  border-radius: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+
+.descriptionWrapper {
+  padding: 0 1rem;
+}
