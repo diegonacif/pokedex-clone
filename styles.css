@@ -6,16 +6,12 @@
 }
 
 body {
-  background: url('./assets/container_bg.png')
-}
-
-.whiteBg {
-  background: #ffffff;
+  background: url('./assets/container_bg.png');
+  width: 100%;
 }
 
 main {
   display: flex;
-  /* background: url('./assets/container_bg.png'); */
   min-height: 100vh;
   min-width: 46rem;
   max-width: 53rem;
@@ -55,16 +51,17 @@ span {
 }
 
 .imgWp {
+  display: flex;
   background: #dee0e0;
   border-radius: 0.5rem;
-  margin-bottom: 0.2rem;
   width: 11rem;
   height: 11rem;
+  margin: 0 auto 0.2rem auto;
 }
 
 .descriptionWp {
   padding: 0 1rem;
-  width: 10rem;
+  width: 9.5rem;
 }
 
 .typeWp {
@@ -77,7 +74,6 @@ span {
 .movesWp {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   row-gap: 0.5rem;
   margin-top: 1.5rem;
   padding: 0 1rem;
@@ -94,8 +90,19 @@ span {
   color: #000;
 }
 
+.card {
+  padding: 0.5rem 0;
+  border-radius: 0.5rem;
+  transition: all 0.5s ease-in-out;
+}
+
 .card img {
   width: 100%;
+}
+
+.card:hover {
+  transition: all 0.5s ease-in-out;
+  background: #f7f7f7;
 }
 
 #grass {
@@ -112,7 +119,8 @@ span {
 }
 
 #flying {
-  background: #BDB9B8;
+  background: rgb(189,185,184);
+  background: linear-gradient(0deg, rgba(189,185,184,1) 0%, rgba(61,199,239,1) 100%);
   color: #000000;
 }
 
